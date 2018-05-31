@@ -1,5 +1,5 @@
 ---
-layout: page
-title: simple site
-tagline: Easy websites with GitHub Pages
+layout: default
+title: michel moser
+description: evolution • genomics • speciation • botany 
 ---
