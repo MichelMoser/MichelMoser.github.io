@@ -1310,7 +1310,7 @@
 /* Basic */
 
 	html {
-		background-color: #313a3d;
+		background-color: #043c4f;
 		background-attachment: fixed,						fixed;
 		background-image: url("images/overlay.png"), url("../../assets/images/bg.jpg");
 		background-position: top left,					center center;
@@ -1342,6 +1342,7 @@
 			overflow: auto;
 		}
 
+		/*  defines text colour and icons*/
 	body, input, select, textarea {
 		color: #6f7577;
 		font-family: "Raleway", "Helvetica", sans-serif;
@@ -2691,7 +2692,7 @@
 		}
 
 		#header header {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 0, 0, 0.5);
 			display: inline-block;
 			padding-bottom: 8em;
 			vertical-align: middle;
@@ -2706,19 +2707,21 @@
 			}
 
 				#header header a:hover {
-					color: #ffffff !important;
+					color: #4286f4 !important;
 				}
-
+			/*colour of header title*/
 			#header header h1 {
 				font-size: 3em;
 				line-height: 1.25em;
 				margin: 0;
+				color: #ffffff;
 			}
 
 				#header header h1:after {
 					margin-top: 0.5em;
 				}
 
+				/*colour of header text*/
 			#header header p {
 				color: #ffffff;
 				font-weight: 700;
@@ -2726,7 +2729,7 @@
 			}
 
 		#header .container {
-			background: rgba(255, 255, 255, 0.95);
+			background: rgba(255, 255, 255, 0.0);
 			bottom: 0;
 			left: 50%;
 			margin-left: -17.5em;
@@ -2750,7 +2753,7 @@
 		position: relative;
 		text-align: center;
 	}
-
+/*colour footer section*/
 		#footer .container {
 			padding: 5em 2.5em 3em 2.5em ;
 			background: rgba(255, 255, 255, 0.95);
