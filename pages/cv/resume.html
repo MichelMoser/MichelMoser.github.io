@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-{% include analytics/analytics.html %}
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
@@ -29,6 +27,8 @@
   
   /* Whole document */
   body {
+    {% include analytics/analytics.html %}
+
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       max-width: 800px;
       margin: auto;
