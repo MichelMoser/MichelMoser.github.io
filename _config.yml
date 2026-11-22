@@ -1,15 +1,14 @@
 # Site settings
 title: Michel Moser
 email: michel.moser@ips.unibe.ch
-description: The Jekyll version of the Highlights theme by HTML5 UP.
+description: Bioinformatician & HPC Lead at Labor Spiez — proteomics (LC-MS/MS, de novo peptide sequencing), high-performance computing and AI.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://michelmoser.github.io" # the base hostname & protocol for your site
 
 # Social settings
 500px_url:
-github_url: https://michelmoser.github.io
-googleplus_url: https://plus.google.com/u/0/118084129488995392616
-instagram_url: https://instagram.com
+github_url: https://github.com/MichelMoser
+instagram_url: https://www.instagram.com/michu_moser/
 linkedin_url: https://www.linkedin.com/in/michel-moser-60311783/
 twitter_url: https://twitter.com/michel_moser
 

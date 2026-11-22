@@ -1,0 +1,204 @@
+/* Custom refinements on top of the Highlights theme.
+   Palette picks up the viridis background: deep purple, teal, green. */
+
+:root {
+	--vir-purple: #3b0f5c;
+	--vir-teal: #21918c;
+	--vir-green: #5ec962;
+	--ink: #2f2f3a;
+	--muted: #6b6b78;
+}
+
+/* Header: readable over the bright parts of the hexbin background */
+#header header h1 {
+	font-size: 3.4em;
+	letter-spacing: 0.04em;
+	text-shadow: 0 2px 18px rgba(20, 0, 40, 0.55);
+}
+
+#header header p.headline {
+	font-size: 1.35em;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	margin-top: 1.2em;
+	text-shadow: 0 1px 12px rgba(20, 0, 40, 0.6);
+}
+
+#header header p.subline {
+	display: inline-block;
+	font-weight: 400;
+	margin-top: 0.9em;
+	padding: 0.45em 1.2em;
+	border-radius: 2em;
+	background: rgba(59, 15, 92, 0.55);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+}
+
+/* Theme's accent button → viridis teal */
+.button.special,
+input[type="submit"].special {
+	background-color: var(--vir-teal) !important;
+}
+
+.button.special:hover {
+	background-color: #2aa39d !important;
+}
+
+/* Content boxes */
+.main .content {
+	color: var(--ink);
+}
+
+.main .content p {
+	text-align: left;
+}
+
+.main .content p.lead {
+	font-size: 1.15em;
+	line-height: 1.6;
+	text-align: center;
+	color: var(--vir-purple);
+}
+
+.main .content strong {
+	color: var(--vir-purple);
+}
+
+.main .content header.major h2:after,
+.main .content header.major h2::after {
+	background: linear-gradient(90deg, var(--vir-purple), var(--vir-teal), var(--vir-green));
+}
+
+img.portrait {
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--vir-teal);
+	margin-bottom: 1em;
+}
+
+.main .content ul.actions {
+	margin-top: 2em;
+}
+
+/* Focus cards */
+.focus-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.2em;
+	text-align: left;
+}
+
+.focus-card {
+	padding: 1.4em 1.3em 1.1em;
+	border-radius: 6px;
+	background: #fafafc;
+	border-top: 4px solid var(--vir-teal);
+	box-shadow: 0 2px 10px rgba(59, 15, 92, 0.08);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.focus-card:nth-child(1) { border-top-color: var(--vir-purple); }
+.focus-card:nth-child(2) { border-top-color: #31688e; }
+.focus-card:nth-child(3) { border-top-color: var(--vir-teal); }
+.focus-card:nth-child(4) { border-top-color: var(--vir-green); }
+
+.focus-card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 22px rgba(59, 15, 92, 0.15);
+}
+
+.focus-card i {
+	color: var(--vir-teal);
+}
+
+.focus-card h3 {
+	margin: 0.6em 0 0.4em;
+	font-size: 1em;
+}
+
+.focus-card p {
+	font-size: 0.85em;
+	line-height: 1.55;
+	margin: 0;
+	color: var(--muted);
+}
+
+/* Skill tags */
+ul.tags {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.6em;
+}
+
+ul.tags li {
+	padding: 0.35em 1em;
+	border-radius: 2em;
+	font-size: 0.85em;
+	line-height: 1.6;
+	border: 1px solid #d6d3de;
+	background: #fff;
+	color: var(--ink);
+}
+
+ul.tags li.key {
+	border: 0;
+	color: #fff;
+	font-weight: 700;
+	background: linear-gradient(135deg, var(--vir-purple), var(--vir-teal));
+}
+
+/* "Beyond work" icon row: three items in one row instead of a 2x2 grid */
+ul.icons-grid {
+	display: flex;
+	justify-content: center;
+}
+
+ul.icons-grid li,
+ul.icons-grid li:nth-child(2n + 1) {
+	float: none;
+	flex: 1;
+	width: auto;
+	padding: 2em 0;
+	box-shadow: none;
+}
+
+ul.icons-grid li + li {
+	box-shadow: inset 1px 0 0 0 #dddddd;
+}
+
+ul.icons-grid li:nth-child(2n + 3):before {
+	display: none;
+}
+
+ul.icons-grid i {
+	color: var(--vir-teal);
+	margin-bottom: 0.5em;
+}
+
+/* Footer */
+#footer .container p {
+	color: var(--muted);
+}
+
+@media screen and (max-width: 736px) {
+	#header header h1 {
+		font-size: 2.3em;
+	}
+
+	#header header p.headline {
+		font-size: 1.05em;
+	}
+
+	#header header p.subline {
+		font-size: 0.85em;
+		margin: 0.9em 1em 0;
+	}
+
+	.focus-grid {
+		grid-template-columns: 1fr;
+	}
+}

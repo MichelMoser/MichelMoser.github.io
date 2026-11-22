@@ -4,82 +4,121 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 {% include head.html %}
 <body>
 {% include header.html %}
 {% include analytics/analytics.html %}
 
-
-
-
-<!-- One -->
+<!-- One: About -->
 <section id="one" class="main special">
 	<div class="container">
 		<span class="image fit primary"><img src="assets/images/pic01.jpg" alt="" /></span>
 		<div class="content">
 			<header class="major">
-			<img src="assets/images/portrait_round.jpg" alt="" width="142" height="142"/>
-				<h2>Who I am</h2>
+				<img class="portrait" src="assets/images/portrait_round.jpg" alt="Portrait of Michel Moser" width="142" height="142"/>
+				<h2>About me</h2>
 			</header>
-			<p>Computational biologist experienced in protomics, genomics and transcriptomics. Father and climbing enthusiast. Fascinated by science and stunned by nature.</p>
-			<p> </p>
-			<p> </p>
-			<p> </p>
-			<p> </p>
-    			<a href="pages/cv/resume.html"> <h2>CV</h2>
-		
+			<p class="lead">Bioinformatician at <strong>Labor Spiez</strong> (Swiss Federal Office for Civil Protection), working where mass spectrometry, high-performance computing and AI meet.</p>
+			<p>I&rsquo;m building a proteomics capability around <strong>de novo peptide sequencing</strong> on a Bruker timsTOF &mdash; from LC-MS/MS sample preparation through DIA-NN analysis to validated, reproducible pipelines. I also run the institute&rsquo;s <strong>HPC cluster</strong> (Ansible-based automation, storage and virtualisation) and help shape how the lab uses <strong>AI and computational methods</strong>, including internal LLM strategies.</p>
+			<p><strong>Background:</strong> PhD in Bioinformatics (University of Bern), with roots in genomics and long-read sequencing. I enjoy turning complex data and infrastructure into tools colleagues can actually use &mdash; and helping teams build these skills.</p>
+			<ul class="actions">
+				<li><a href="pages/cv/resume.html" class="button special">View CV</a></li>
+				<li><a href="{{ site.linkedin_url }}" class="button" target="_blank" rel="noopener">LinkedIn</a></li>
+			</ul>
 		</div>
 		<a href="#two" class="goto-next scrolly">Next</a>
 	</div>
 </section>
 
-<!-- Two -->
+<!-- Two: Focus areas -->
 <section id="two" class="main special">
 	<div class="container">
 		<span class="image fit primary"><img src="assets/images/pagePicture1.png" alt="" /></span>
 		<div class="content">
 			<header class="major">
-				<h2>Stuff I do</h2>
+				<h2>What I work on</h2>
 			</header>
-			<p>.</p>
-			<ul class="icons-grid">
-					<li>
-						<a href="http://w-hoch2.ch/"> <i class="fas fa-code fa-2x"></i></a>
-						<!--<span class="icon major fa-camera-retro"></span>  -->
-					<h3>data science</h3>
-				</li>
-				<li>
-				
-						<i class="fas fa-dna fa-2x"></i>
-						<!--	<span class="icon major fa-pencil"></span> -->
-					<h3>bioinformatics</h3>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/michu_moser/"> <i class="fas fa-tree fa-2x"></i></a>
-					<!--	<span class="icon major fa-code"></span> -->
-					<h3>outdoor activities</h3>
-				</li>
-				<li>
-					<a href="http://paradiesgaerten.ch/"> <i class="fas fa-leaf fa-2x"></i></a>
-				<!--		<span class="icon major fa-leaf"></span> -->
-					<h3>gardening</h3>
-				</li>
-			</ul>
+			<div class="focus-grid">
+				<div class="focus-card">
+					<i class="fas fa-flask fa-2x"></i>
+					<h3>Proteomics</h3>
+					<p>LC-MS/MS on a Bruker timsTOF, DIA-NN workflows and de novo peptide sequencing &mdash; built into validated, reproducible pipelines.</p>
+				</div>
+				<div class="focus-card">
+					<i class="fas fa-server fa-2x"></i>
+					<h3>HPC &amp; infrastructure</h3>
+					<p>Running the institute&rsquo;s compute cluster: Linux administration, Ansible automation, storage and virtualisation.</p>
+				</div>
+				<div class="focus-card">
+					<i class="fas fa-robot fa-2x"></i>
+					<h3>AI &amp; computational science</h3>
+					<p>Machine learning, large language models and agentic AI &mdash; and an internal LLM strategy for the lab.</p>
+				</div>
+				<div class="focus-card">
+					<i class="fas fa-dna fa-2x"></i>
+					<h3>Genomics</h3>
+					<p>Roots in genome assembly and annotation (PGAP, makerP), long-read sequencing and comparative genomics.</p>
+				</div>
+			</div>
 		</div>
 		<a href="#three" class="goto-next scrolly">Next</a>
 	</div>
 </section>
 
-<!-- Three -->
+<!-- Three: Skills -->
 <section id="three" class="main special">
+	<div class="container">
+		<span class="image fit primary"><img src="assets/images/pic02.jpg" alt="" /></span>
+		<div class="content">
+			<header class="major">
+				<h2>Skills</h2>
+			</header>
+			<ul class="tags">
+				<li class="key">Proteomics</li>
+				<li class="key">LC-MS/MS</li>
+				<li class="key">DIA-NN</li>
+				<li class="key">De novo peptide sequencing</li>
+				<li class="key">timsTOF</li>
+				<li class="key">High-Performance Computing (HPC)</li>
+				<li>Linux system administration</li>
+				<li>Ansible</li>
+				<li>Python (Polars, Streamlit)</li>
+				<li>R</li>
+				<li>Machine learning</li>
+				<li>LLMs / agentic AI</li>
+				<li>Method validation</li>
+				<li>Genome annotation (PGAP, makerP)</li>
+				<li>Scientific software development</li>
+			</ul>
+		</div>
+		<a href="#four" class="goto-next scrolly">Next</a>
+	</div>
+</section>
+
+<!-- Four: Beyond work -->
+<section id="four" class="main special">
 	<div class="container">
 		<span class="image fit primary"><img src="assets/images/pic03.jpg" alt="" /></span>
 		<div class="content">
 			<header class="major">
-				<h2>One more thing</h2>
+				<h2>Beyond work</h2>
 			</header>
-			<p>This site is still under construction and will be updated. Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
+			<p>Father and climbing enthusiast &mdash; fascinated by science and stunned by nature.</p>
+			<ul class="icons-grid">
+				<li>
+					<a href="http://w-hoch2.ch/" target="_blank" rel="noopener"><i class="fas fa-code fa-2x"></i></a>
+					<h3>data science</h3>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/michu_moser/" target="_blank" rel="noopener"><i class="fas fa-mountain fa-2x"></i></a>
+					<h3>outdoors</h3>
+				</li>
+				<li>
+					<a href="http://paradiesgaerten.ch/" target="_blank" rel="noopener"><i class="fas fa-leaf fa-2x"></i></a>
+					<h3>gardening</h3>
+				</li>
+			</ul>
 		</div>
 		<a href="#footer" class="goto-next scrolly">Next</a>
 	</div>
