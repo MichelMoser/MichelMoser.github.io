@@ -1,6 +1,6 @@
 # Site settings
 title: Michel Moser
-email: michel.moser@ips.unibe.ch
+email: michel.m.ser@gmail.com
 description: Bioinformatician & HPC Lead at Labor Spiez — proteomics (LC-MS/MS, de novo peptide sequencing), high-performance computing and AI.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://michelmoser.github.io" # the base hostname & protocol for your site
